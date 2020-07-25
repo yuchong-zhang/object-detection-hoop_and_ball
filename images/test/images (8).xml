@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>images (8).jpg</filename>
+	<path>C:\Users\Yuchong\Desktop\basketball_detection\images\images (8).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>261</width>
+		<height>193</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ball</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>135</xmin>
+			<ymin>11</ymin>
+			<xmax>155</xmax>
+			<ymax>31</ymax>
+		</bndbox>
+	</object>
+</annotation>
