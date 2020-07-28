@@ -10,7 +10,7 @@ protoc object_detection/protos/*.proto --python_out=. $protos folder not include
 python generate_tfrecord.py --csv_input=data/train_labels.csv --output_path=data/train.record --image_dir=images/
 python generate_tfrecord.py --csv_input=data/test_labels.csv --output_path=data/test.record --image_dir=images/
 ```
-5.Train. Setup a .config file for the model of choice (you could train your own from scratch, but we'll be using transfer learning)
+5. Train. Setup a .config file for the model of choice (you could train your own from scratch, but we'll be using transfer learning)
 ```
 python legacy/train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/ssd_mobilenet_v1
 ```
@@ -18,5 +18,5 @@ python legacy/train.py --logtostderr --train_dir=training/ --pipeline_config_pat
 ```
 python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/ssd_mobilenet_v1_pets.config --trained_checkpoint_prefix training/model.ckpt-791 --output_directory basketball_interface_graph
 ```
-8. Detect custom objects in real time
+7. Detect custom objects in real time
 Use object_detection_tutorial.ipynb!
