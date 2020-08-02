@@ -1,4 +1,8 @@
 # object-detection-hoop_and_ball
+In this project I use the <a href='https://github.com/tensorflow/models/tree/master/research/object_detection'>tensorflow object detection API</a> to build a model to detect hoop and ball from pictures. I give lots of credit to <a href='https://pythonprogramming.net/introduction-use-tensorflow-object-detection-api-tutorial/'>this tutorial</a>, which gives step-by-step instructions to build a model to detect mac-n-cheese. In my case, I only used 9 images for training and 4 images for testing while still getting some reasonable results. One can easily get a more accurate model by training with more samples.
+
+Step-by-Step instructions:
+
 1. Collect images that contain your object
 2. Annotate/label the images, with LabelImg(https://github.com/tzutalin/labelImg). This process is basically drawing boxes around your object(s) in an image. The label program automatically will create an XML file that describes the object(s) in the pictures.
   using 
